@@ -6,6 +6,18 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignore virtual environment
+.venv/
+
+# Ignore collected static files
+staticfiles/
+
+# Django stuff
+*.pyc
+__pycache__/
+db.sqlite3
+.env
+
 # Distribution / packaging
 .Python
 build/

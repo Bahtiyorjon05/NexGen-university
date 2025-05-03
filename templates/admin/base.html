@@ -1,0 +1,11 @@
+<!-- File: templates/admin/base.html -->
+{% extends "admin/base.html" %}
+{% block extrahead %}
+{{ block.super }}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        localStorage.setItem('django-admin-theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+    });
+</script>
+{% endblock %}
